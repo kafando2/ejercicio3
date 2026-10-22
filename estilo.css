@@ -1,0 +1,119 @@
+/* =========================================
+   1. VARIABLES DE COLORES
+   ========================================= */
+
+:root {
+    --azul-principal: lab(43.16% 21.97 -61.48);
+    --blanco: white;
+    --fondo-seccion: #bb9ba5cc;
+    --texto-seccion: rgb(110, 118, 133);
+    --fondo-hover: rgb(10, 15, 24);
+    --negro: black;
+}
+
+
+/* =========================================
+   2. FUENTE Y TAMAÑO GENERAL
+   ========================================= */
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   3. TAMAÑO DE LOS H3
+   ========================================= */
+
+h3 {
+    font-size: 1.3rem;
+}
+
+
+/* =========================================
+   4. HEADER Y FOOTER
+   ========================================= */
+
+header,
+footer {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* =========================================
+   5. ENLACES
+   ========================================= */
+
+a {
+    color: inherit;
+}
+
+a:active {
+    color: var(--azul);
+}
+
+
+/* =========================================
+   6. SECCIONES
+   ========================================= */
+
+section {
+    background-color: var(--fondo-seccion);
+    color: var(--texto-seccion);
+    padding: 20px;
+    margin: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* =========================================
+   7. PRIMERA SECCIÓN AL PASAR EL RATÓN
+   ========================================= */
+
+section:first-of-type:hover {
+    background-color: var(--fondo-hover);
+    color: var(--blanco);
+}
+
+
+/* =========================================
+   8. ARTÍCULOS
+   ========================================= */
+
+article {
+    padding: 10px;
+    margin: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+article:hover {
+    background-color: var(--fondo-hover);
+    color: var(--blanco);
+}
+
+
+/* =========================================
+   9. SPAN EN NEGRITA
+   ========================================= */
+
+span {
+    font-weight: bold;
+}
+
+
+/* =========================================
+   10. PÁRRAFO HIJO DIRECTO DEL ÚLTIMO ARTICLE
+   ========================================= */
+
+article:last-child>p {
+    font-style: italic;
+}
